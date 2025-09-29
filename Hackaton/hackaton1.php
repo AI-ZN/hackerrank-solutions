@@ -26,6 +26,7 @@ function RaceTraining($i,$j){
      }
     
 }
+<<<<<<< HEAD
 
 function RomeoWin($i){
     if ($i <= 0 || $i >=1001) {
@@ -50,6 +51,42 @@ function RomeoWin($i){
                     
                 }
             
+            if(!$draw && $romeo >= $Track &&  $beck < $Track){
+                
+                    echo "The minimum checkpoint for Romeo when Beck is " . $i . " is " . $j;
+                    break;
+            }
+        }
+    }
+}
+
+RaceTraining(1,6);
+RomeoWin(5);
+=======
+>>>>>>> ea55ec38ac8c5848f4fbdbbc4aaf5006a6a070f3
+
+function RomeoWin($i){
+    if ($i <= 0 || $i >=1001) {
+    echo "Invalid starting position";
+    }else{
+        $Track = 6000;
+        $Beck_15 = $i * 6;
+        
+        for ($j = $i + 1; $j <= 1001; $j+=1){
+            $Romeo_7 = $j * 6;
+            $beck = $Beck_15;
+            $romeo = $Romeo_7;
+            $draw = false;
+                while($romeo < $Track && $beck < $Track){
+                    $romeo +=1;
+                    $beck +=2;
+
+                    if($romeo == $beck){
+                        $draw = true;
+                        break;
+                    }
+                    
+                }
             if(!$draw && $romeo >= $Track &&  $beck < $Track){
                 
                     echo "The minimum checkpoint for Romeo when Beck is " . $i . " is " . $j;

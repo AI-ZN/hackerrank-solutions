@@ -39,4 +39,8 @@ Then we can show the position of beck and the checkpoint needed for romeo to win
 
 ---> RomeoWin function to find the checkpoint where romeo needs to be placed in order to win when beck is positioned somewhere.
 
+<<<<<<< HEAD
 This is my understanding and Solution of the Hackaton Problem.
+=======
+This is my understanding and Solution of the Hackaton Problem.
+>>>>>>> ea55ec38ac8c5848f4fbdbbc4aaf5006a6a070f3
